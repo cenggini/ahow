@@ -1,0 +1,115 @@
+/* CENGGINI SARANG */
+.cs-webcensar {
+  color:red;
+  font-family:FontAwesome;
+  padding: 0px 0px 0px 0px;
+  margin: -10px auto;
+  list-style: none outside;
+}
+/////////////////////////////////
+//  HARGAI PEMBUAR             //
+//  Jika Ingin mengopas harap  //
+//  Izin pasti Kami mengizinkan//             //  Chreat By: webcensar.com   //
+/////////////////////////////////
+.cs-webcensar > * + * { border-top: 1px solid white; }
+
+.cs-webcensar-item-hd {
+  display:block; margin:10px 0px; border:1px solid #ddd; border-radius:2px 2px 2px 2px; -moz-border-radius:10px;
+  display: block;
+  background:#fff;
+  padding: 0px 0px 2px 1px;
+  position: relative;
+  line-height:30px;
+  cursor: pointer;
+  font-size: 10px; /* ukuran hurup pada header*/
+  font-weight: bold;
+  color: #0673e0;
+  top:-30px;
+}
+/* Di bagian ini kalian bisa mengatur ukuran hurup pada mode off */
+.cs-webcensar-item-hd::before{
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  background: transparent;
+  font-size:10px;
+  vertical-alight:middle;
+  content:"\f0e6"" ""OFF";
+  margin:3px;
+  color:red;
+  font-family:FontAwesome;
+}
+/* END */
+
+/* Di bagian ini kalian bisa mengatur ukuran hurup pada mode on */
+.cs-webcensar-item-input:checked ~ .cs-webcensar-item-hd::before{
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 10px;
+  vertical-alight:middle;
+  content:"\f0e6"" ""ON";
+  margin:3px;
+  color:#0dc410;
+  font-family:FontAwesome;
+}
+/* END */
+
+/* Di bagian ini Kalian bisa mengatur kecepatan dan mengurangi mode buka */
+.cs-webcensar-item-input:checked ~ .cs-webcensar-item-bd { 
+  max-height: 100%;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: max-height 1s ease-in, margin .3s ease-in, padding .3s ease-in;
+  transition: max-height 1s ease-in, margin .3s ease-in, padding .3s ease-in;
+}
+
+.cs-webcensar-item-input:checked ~ .cs-webcensar-item-hd > .cs-webcensar-item-hd-cta {
+  right:6px;
+  top:4px;
+  color:#0dc410;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.cs-webcensar-item-hd-cta {
+  display: block;
+  color:#ddd;
+  position: absolute;
+  top: calc(51% - 13px );
+  /* Di bagian ini kalian bisa mengatur posisi icon dan menmbah/ mengurangi ukuran icon*/
+  right: 5px;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform .53s ease;
+  transition: transform .0000s ease;
+  -webkit-transform: rotate( -180deg);
+  -ms-transform: rotate (-180deg);
+  transform: rotate(-180deg);
+  text-align: center;
+  font-size: 25px;
+  line-height: 1;
+}
+/* END */
+
+.cs-webcensar-item-bd {
+  max-height: 0;
+  background:#fff;
+  padding:-5px;
+  box-shadow:0px 2px 0px 1px  #ddd;
+  margin:-50px 1px 0px 1px;
+  border-radius:0px 0px 5px 5px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height .15s ease-out, margin-bottom .13s ease-out, padding .3s ease-out;
+  transition: max-height .15s ease-out, margin-bottom .3s ease-out, padding .3s ease-out;
+}
+
+.cs-webcensar-item-input {
+  clip: rect(0 0 0 0 0);
+  width: 1px
+  height: 1px;
+  margin: -1;
+  overflow: open;
+  position: absolute;
+  left: -9999px;
+}
+/* CENGGINI SARANG END */
